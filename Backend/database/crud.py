@@ -37,6 +37,7 @@ class WeatherCRUD:
                     VALUES (NOW(), %s, %s, %s, %s)
                 """, (temp, humidity, wind_speed, pressure))
                 conn.commit()
+                print('Data inserted successfully')
 
     def get_recent(self, limit=10):
         with get_connection() as conn:

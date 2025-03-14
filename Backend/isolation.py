@@ -10,7 +10,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 app = Flask(__name__)
 
 # Load the pre-trained model
-iso_forest = joblib.load("model/isolation.joblib")
+iso_forest = joblib.load("model/isolation_forest_model2.joblib")
 
 
 def load_and_preprocess_data(file):
